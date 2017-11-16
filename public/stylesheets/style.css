@@ -1,0 +1,178 @@
+body {
+  /*padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0
+}
+
+a {
+  color: #00B7FF;
+}
+
+header {
+  background: #eee;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-content: center;
+  font-size: 18px;
+}
+
+header h1 {
+  font-size: 18px;
+  margin: 0 10px 0 0;
+  display: inline;
+  font-weight: lighter;
+}
+
+header span.count {
+  display: inline;
+  margin: 0 10px;
+  color: #929000;
+  font-size: 12px;
+  line-height: 21px;
+}
+
+header span.header-links {
+  flex: 1 0 auto;
+  text-align: right;
+  float: right;
+  font-size: 14px;
+}
+
+article.container {
+  margin: 0 8px;
+  height: calc( 100% - 142px );
+  overflow: auto
+}
+
+article.dashboard {
+  padding: 0 10px;
+}
+
+/* login page */
+
+.login-form {
+  width: 250px;
+  margin-left: 15px;
+}
+
+.login-form>* {
+  display: block;
+  margin: 5px 0;
+}
+
+.login-form>label {
+  margin-top: 10px
+}
+
+.login-form input {
+  height: 33px;
+  width: 100%;
+  padding: 0 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
+}
+
+.login-form input:focus {
+  border-color: #2188ff;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(27,31,35,0.075), 0 0 0 0.2em rgba(3,102,214,0.3);
+}
+
+.login-form button {
+  color: #fff;
+  width: 100%;
+  border: solid 1px #777;
+  height: 33px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 20px 0 15px 0;
+  background-color: #28a745;
+  background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+}
+
+.login-form button:hover {
+  background-image: linear-gradient(-180deg, #2fcb53 0%, #269f42 90%);
+}
+
+.login-form button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2em rgba(52,208,88,0.3);
+}
+
+.login-form button:active {
+  background-color: #279f43;
+  background-image: none;
+  border-color: rgba(27,31,35,0.5);
+  box-shadow: inset 0 0.15em 0.3em rgba(27,31,35,0.15);
+}
+
+/* choice page */
+
+p.pic-container {
+  overflow: auto
+}
+
+p.pic-container:first-child {
+  margin-top: 0
+}
+
+p.operations {
+  text-align: right;
+  padding: 0 10px;
+}
+
+p.operations a {
+  font-size: 18px;
+}
+
+/* progress */
+article.progress table {
+  border-collapse: collapse;
+}
+
+article.progress tr:nth-child( 2n ) {
+  /*background: #eee*/
+}
+
+article.progress tr:nth-child( 2n + 1 ) {
+  /*background: #eee*/
+}
+
+article.progress th {
+  padding: 10px 5px;
+  background: #eee;
+  font-weight: 500;
+}
+
+article.progress td {
+  margin: 10px;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+}
+
+article.progress img.chosen {
+  border: 1px solid #2188ff;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(27,31,35,0.075), 0 0 0 0.2em rgba(3,102,214,0.3);
+}
+
+article.progress td p {
+  font-size: 12px;
+  color: #888
+}
+
+article.progress td img {
+  width: 400px;
+
+}
+
+.paginationjs {
+  float: right;
+  margin: 30px;
+}

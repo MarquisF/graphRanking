@@ -1,0 +1,21 @@
+<!-- <h1>GRAPHBOOK LOGIN</h1> -->
+<% include header %>
+<script src="utilsFullStack/FormValidationStrategy.js"></script>
+<script src="utilsFullStack/FormValidationRules/LoginValidation.js"></script>
+<header>GRAPHBOOK SIGN IN</header>
+<%= locals.err_msg %>
+
+<article class="container">
+  <!-- <form class="login-form" method="post" action="/login"> -->
+  <form id="loginForm" class="login-form" onsubmit="javascript: return false;">
+    <label>Email</label>
+    <input type="text" name="email" />
+    <label>Passcode</label>
+    <input type="password" name="passcode" />
+    <button>Sign in</button>
+    <p>
+      No account? Go to <a href="/register">register</a>
+    </p>
+  </form>
+</article>
+<script src="javascripts/login.js"></script>

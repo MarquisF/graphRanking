@@ -1,0 +1,45 @@
+<% include header %>
+
+<!-- import pagination package -->
+<link rel="stylesheet" type="text/css" href="/stylesheets/pagination.min.css">
+<script src="/javascripts/pagination.min.js"></script>
+<!-- imported -->
+
+<header>
+  <h1>RANKING</h1>
+  <span class='header-links'>
+    <a href="/dashboard">Go to dashboard</a>
+  </span>
+</header>
+<article class="container progress">
+  <section>
+    <table>
+      <tr>
+        <th>Ranking</th>
+        <th>Picture</th>
+        <th>Score</th>
+      </tr>
+      <% for ( var i = 0; i < data.length; i ++ ) { %>
+        <tr>
+          <td title='ranking'>
+            <%= i + 1 + ( page - 1 ) * pageCapacity %>
+          </td>
+          <td title='picture'>
+            <img src='/<%= data[i]['path'] %>' />
+          </td>
+          <td title='score'>
+            <%= data[i]['score'] %>
+          </td>
+        </tr>
+      <% } %>
+    </table>
+  </section>
+
+</article>
+
+<script>
+  window.countInfo = <%- countInfo %>;
+  window.page = <%- page %>;
+  window.pageCapacity = <%= pageCapacity %>;
+</script>
+<script src="/javascripts/ranking.js"></script>

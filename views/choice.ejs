@@ -1,0 +1,32 @@
+<% include header %>
+
+  <header>
+    <h1>CHOICE QUESTION</h1>
+    <span class='count'><%= locals.countInfo %></span>
+    <span class='header-links'>
+      <a href="/dashboard">Go to dashboard</a>
+    </span>
+  </header>
+  <article class="container">
+    <section id="chart_1" class="chart-container">
+      <p class="pic-container">
+        <img src="<%= locals.chart_1.path %>" />
+      </p>
+      <p class="operations"><input type="checkbox" name="chart_1"></p>
+    </section>
+    <section id="chart_2" class="chart-container">
+      <p class="pic-container">
+        <img src="<%= locals.chart_2.path %>" />
+      </p>
+      <p class="operations"><input type="checkbox" name="chart_2"></p>
+    </section>
+  </article>
+  <p class="operations">
+    <a id="next" href="javascript: void(0)">next ></a>
+  </p>
+
+<script>
+  window.charts = <%- locals.jsData %>
+  window.round = <%- locals.round %>
+</script>
+<script src="javascripts/choice.js"></script>

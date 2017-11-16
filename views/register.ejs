@@ -1,0 +1,22 @@
+<% include header %>
+<script src="utilsFullStack/FormValidationStrategy.js"></script>
+<script src="utilsFullStack/FormValidationRules/RegisterValidation.js"></script>
+
+<header>GRAPHBOOK REGISTER</header>
+<article class="container">
+  <form id="registerForm" class="login-form" onsubmit="javascript: return false;">
+    <label>Email</label>
+    <input type="text" name="email" />
+    <label>Username</label>
+    <input type="text" name="username">
+    <label>Passcode</label>
+    <input type="password" name="passcode" />
+    <label>Re-enter Passcode</label>
+    <input type="password" name="passcode_conf" />
+    <button>Register</button>
+    <p>
+      Have an account? Go to <a href="/login">sign in</a>
+    </p>
+  </form>
+</article>
+<script src="javascripts/register.js"></script>
